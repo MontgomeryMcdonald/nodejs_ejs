@@ -1,0 +1,20 @@
+
+
+
+<%- include("partials/header.ejs") %>
+
+<h2><%=title%></h2>
+
+
+<p>This shows a list of students, and their grades.</p>
+
+<a href="/students">STUDENTS</a>
+
+<p>
+    EJS stands for embedded Javascript Templates - it allows you to write logic directly in HTML.
+
+    you can reuse layout parts using partials (headers/footers).
+    you can inject variables and arrays from a node.js backend into html easily, and its often used in small-to-medium express apps or admin dashboards, where you dont need a full frontend framework like react.
+</p>
+
+<%- include("partials/footer.ejs") %>

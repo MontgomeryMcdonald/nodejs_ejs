@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h2><%=title%></h2>
+
+<ul>
+    <% students.forEach(student => { %>
+
+        <li>
+            <strong><%= student.name %></strong> - Grade: <%= student.grade %> -- Age: <%= student.age %>
+        </li>
+
+   <% })%>
+</ul>
+
+<a href="/index">HOME</a>
+
+<%- include("partials/footer.ejs") %>
